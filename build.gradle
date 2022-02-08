@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.testng:testng:7.5'
+    testImplementation 'io.rest-assured:rest-assured:4.5.0'
+    testImplementation 'org.hamcrest:hamcrest:2.2'
+    testImplementation 'com.aventstack:extentreports-testng-adapter:1.2.2'
+    testImplementation 'com.aventstack:extentreports:5.0.9'
+    testImplementation 'io.rest-assured:json-schema-validator:4.5.0'
+}
+
+test {
+    useTestNG()
+}
